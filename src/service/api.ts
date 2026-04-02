@@ -15,3 +15,6 @@ export const createExpense = async (expense: Expense): Promise<void> => {
 export const deleteExpense = async (id: number) => {
   await axios.delete(`${BASE_URL}/delete/${id}`);
 };
+export const updateExpense = async (expense: Expense) => {
+  await axios.put(`${BASE_URL}/update`, expense);
+};

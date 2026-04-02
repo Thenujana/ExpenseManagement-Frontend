@@ -11,6 +11,7 @@ const ExpenseForm = ({ onAdd }: Props) => {
     costGbp: 0,
     description: "",
     expenseType: "food",
+    category: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -36,6 +37,7 @@ const ExpenseForm = ({ onAdd }: Props) => {
       costGbp: 0,
       description: "",
       expenseType: "food",
+      category: "",
     });
   };
 
