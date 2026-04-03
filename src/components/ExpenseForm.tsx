@@ -3,6 +3,8 @@ import type { Expense } from "../types/Expense";
 
 interface Props {
   onAdd: (expense: Expense) => void;
+  editingExpense?: Expense | null;
+  cancelEdit?: () => void;
 }
 
 const ExpenseForm = ({ onAdd }: Props) => {
